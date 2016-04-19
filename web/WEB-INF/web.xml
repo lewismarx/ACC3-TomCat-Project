@@ -7,13 +7,35 @@
 
 
 
-
+    <context-param>
+        <param-name>universal</param-name>
+        <param-value>Unicorn</param-value>
+    </context-param>
 <servlet>
-    <servlet-name>MyMartian</servlet-name>
-    <servlet-class>edu.acc.java.MyMartian</servlet-class>
+    <servlet-name>Servletx</servlet-name>
+    <servlet-class>edu.acc.java.Servletx</servlet-class>
+    <init-param>
+        <param-name>my_param</param-name>
+        <param-value>Dog</param-value>
+    </init-param>
 </servlet>
     <servlet-mapping>
-        <servlet-name>MyMartian</servlet-name>
-        <url-pattern>/MyMartian</url-pattern>
+        <servlet-name>Servletx</servlet-name>
+        <url-pattern>/Servletx</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>Servlety</servlet-name>
+        <servlet-class>edu.acc.java.Servlety</servlet-class>
+        <init-param>
+            <param-name>my_param</param-name>
+            <param-value>Cat</param-value>
+
+        </init-param>
+
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Servlety</servlet-name>
+        <url-pattern>/Servlety</url-pattern>
+    </servlet-mapping>
+
 </web-app>
