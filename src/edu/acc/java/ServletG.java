@@ -21,6 +21,7 @@ public class ServletG extends HttpServlet {
         //store where jsp can get to it
         request.setAttribute("bean", headerbean);
         //forward to jsp
+
         request.getRequestDispatcher("/ServletG.jsp").forward(request,response);
 
     }
